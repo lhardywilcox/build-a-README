@@ -11,7 +11,7 @@ inquirer
             message: 'What is your project title?',
         },
         {
-            type: 'input',
+            type: 'input',cd
             name: 'description',
             message: 'Describe your project.',
         },
@@ -28,23 +28,34 @@ inquirer
         {
             type: 'input',
             name: 'credits',
-            message: 'What resources did you use to build this project?',
+            message: 'What resources or collaborations did you use to build this project?',
         },
         {
-            type: 'input',
+            type: 'checkbox',
             name: 'license',
             message: 'What type of licese does your project have?',
+            choices: ['GNU GPLv3', 'MIT', 'Boost Software License 1.0'],
         },
-    ]);
+    ])
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { 
- 
-}
+
+// How do I get the data from generateMardown.js to be saved here?
+function writeToFile(fileName, data) {
+    fs.writeFile('README.md', data, (err)) {
+        if (error) {
+            throw error;
+        } else {
+            console.log('README created!');
+        }
+    };
+};
 
 // TODO: Create a function to initialize app
-function init() { 
-    
+
+// What needs to be initialized? Am I just calling functions here?  Is this where I link the generateMarkdown.js file?
+function init() {
+
 }
 
 // Function call to initialize app
