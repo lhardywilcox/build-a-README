@@ -37,7 +37,22 @@ const questions =[
             message: 'What type of licese does your project have?',
             choices: ['GNU GPLv3', 'MIT', 'Boost Software License 1.0'],
         },
-    ]
+         {
+            type: 'input',
+            name: 'tests',
+            message: 'What tests have been developed for this project?',
+        },
+         {
+            type: 'input',
+            name: 'github',
+            message: 'What is the address of your github account?',
+        },
+         {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address?',
+        }
+    ];
   
 
 // TODO: Create a function to write README file
