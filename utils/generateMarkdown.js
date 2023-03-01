@@ -6,26 +6,27 @@
 const gnuInfo =
 {
   type: 'GNU GPLv3',
-  badge: 'https://img.shields.io/badge/License-GPLv3-blue.svg',
-  link: 'https://www.gnu.org/licenses/gpl-3.0',
+  badge: `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`,
+  link: '[GNU GPLv3 link](https://www.gnu.org/licenses/gpl-3.0.en.html)',
 };
 
 const mitInfo =
 {
   type: 'MIT',
-  badge: 'https://img.shields.io/badge/License-MIT-yellow.svg',
-  link: 'https://opensource.org/licenses/MIT',
+  badge: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
+  link: '[MIT License link](https://opensource.org/license/mit-0/)',
 };
 
 const boostInfo =
 {
   type: 'Boost Software License 1.0',
-  badge: 'https://img.shields.io/badge/License-Boost_1.0-lightblue.svg',
-  link: 'https://www.boost.org/LICENSE_1_0.txt',
+  badge: `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`,
+  link: '[Boost Software License 1.0 link](https://opensource.org/license/bsl1-0-html/)',
 };
 
 
-// How do I get the data for the license chosen from index.js?
+// How do I get the data for the license chosen from index.js?  This throws an error for can't find index.js.
+
 
 function renderLicenseBadge(license) {
 
@@ -34,54 +35,58 @@ function renderLicenseBadge(license) {
      MIT: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
      Boost: `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`,
    } */
-  if (data.license === mitInfo.type) {
+  if (license === mitInfo.type) {
     return mitInfo.badge;
-  } else if (data.license === gnuInfo.type) {
+  } else if (license === gnuInfo.type) {
     return gnuInfo.badge;
-  } else if (data.license === boostInfo.type) {
+  } else if (license === boostInfo.type) {
     return boostInfo.badge;
   } else {
     return ("");
-  }
-};
+  };
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (data.license === mitInfo.type) {
+  if (license === mitInfo.type) {
     return mitInfo.link;
-  } else if (data.license === gnuInfo.type) {
+  } else if (license === gnuInfo.type) {
     return gnuInfo.link;
-  } else if (data.license === boostInfo.type) {
+  } else if (license === boostInfo.type) {
     return boostInfo.link;
   } else {
     return ("");
-  }
+  };
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 
-// Is this supposed to be rendering the actual verbiage of the license?
 function renderLicenseSection(license) {
-
-
+  if (license) {
+    return `${renderLicenseBadge(license)}\n
+    ${renderLicenseLink(license)}\n
+    For the complete text of the license, please click on the link provided.`;
+  } else {
+    return ("");
+  };
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}\n
+function generateMarkdown({title, license, description, installation,usage, credits}) {
+  return `# ${title}\n
+  ${renderLicenseBadge(license)}\n
   ## Description\n
-  ${data.description}\n
+  ${description}\n
   ## Installation\n
-  ${data.installation}\n
+  ${installation}\n
   ## Usage\n
-  ${data.usage}\n
+  ${usage}\n
   ## Credits/Collaborators\n
-  ${data.credits}\n
+  ${credits}\n
   ## License\n
-
-
+  ${renderLicenseSection(license)}
 `;
 }
 
