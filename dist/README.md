@@ -12,7 +12,7 @@
 
   -[Usage](#Usage)
 
-  -[Credits/Collaborators](#Credits/Collaborators)
+  -[Credits and Collaborators](#Credits and Collaborators)
 
   -[License](#License)
 

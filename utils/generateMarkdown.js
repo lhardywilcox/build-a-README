@@ -82,7 +82,7 @@ function generateMarkdown({ title, license, description, installation, usage, cr
   ## Table of Contents\n
   -[Installation](#Installation)\n
   -[Usage](#Usage)\n
-  -[Credits/Collaborators](#Credits/Collaborators)\n
+  -[Credits and Collaborators](#Credits and Collaborators)\n
   -[License](#License)\n
   -[Tests](#Tests)\n
   -[Questions](#Questions)\n
@@ -90,7 +90,7 @@ function generateMarkdown({ title, license, description, installation, usage, cr
   ${installation}\n
   ## Usage\n
   ${usage}\n
-  ## Credits/Collaborators\n
+  ## Credits and Collaborators\n
   ${credits}\n
   ## License\n
   ${renderLicenseSection(license)}
