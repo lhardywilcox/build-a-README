@@ -98,9 +98,9 @@ function generateMarkdown({ title, license, description, installation, usage, cr
   ${tests}\n
   ## Questions\n
   If you have questions, please reach out to me at:\n
-  [Github Link](${github})\n
+  [github profile](github.com/${github})\n
   or\n
-  [Email Link](${email})
+  [email](${email})
 `;
 }
 
