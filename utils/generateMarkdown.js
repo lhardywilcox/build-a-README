@@ -7,21 +7,21 @@ const gnuInfo =
 {
   type: 'GNU GPLv3',
   badge: `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`,
-  link: '[GNU GPLv3 link](https://www.gnu.org/licenses/gpl-3.0.en.html)',
+  link: `[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)`,
 };
 
 const mitInfo =
 {
   type: 'MIT',
   badge: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
-  link: '[MIT License link](https://opensource.org/license/mit-0/)',
+  link: `[MIT License](https://opensource.org/license/mit-0/)`,
 };
 
 const boostInfo =
 {
   type: 'Boost Software License 1.0',
   badge: `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`,
-  link: '[Boost Software License 1.0 link](https://opensource.org/license/bsl1-0-html/)',
+  link: `[Boost Software License 1.0](https://opensource.org/license/bsl1-0-html/)`,
 };
 
 
@@ -65,9 +65,9 @@ function renderLicenseLink(license) {
 
 function renderLicenseSection(license) {
   if (license) {
-    return `${renderLicenseBadge(license)}\n
-    ${renderLicenseLink(license)}\n
-    For the complete text of the license, please click on the link provided.\n`;
+    return `${renderLicenseBadge(license)}\n 
+${renderLicenseLink(license)}\n 
+For the complete text of the license, please click on the link provided.\n`;
   } else {
     return ("");
   };

@@ -1,10 +1,10 @@
-# Olkahoma
+# Ten
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   ## Description
 
-  where
+  nine
 
   ## Table of Contents
 
@@ -22,34 +22,34 @@
 
   ## Installation
 
-  the 
+  eight
 
   ## Usage
 
-  wind
-
+  seven
+ 
   ## Credits
 
-  goes
+  six
 
   ## License
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-    [MIT License link](https://opensource.org/license/mit-0/)
-
-    For the complete text of the license, please click on the link provided.
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+ 
+[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+ 
+For the complete text of the license, please click on the link provided.
 
   ## Tests
 
-  sweeping 
+  five
 
   ## Questions
 
   If you have questions, please reach out to me at:
 
-  [github profile](github.com/oer)
+  [github profile](github.com/four)
 
   or
 
-  [email](the)
+  [email](three)
