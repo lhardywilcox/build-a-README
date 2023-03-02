@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// Included packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
+// Array of user questions
 const questions = [
     {
         type: 'input',
@@ -54,10 +54,7 @@ const questions = [
     }
 ];
 
-
-// TODO: Create a function to write README file
-
-// How do I get the data from generateMarkdown.js to be saved here?  Do I call generateMarkdown as part of this function?
+// This function writes the generated README file and stores it in the folder labelled "dist" in the project directory.
 function writeReadMe(data) {
     fs.writeFile('./dist/README.md', data, (err) => {
         if (err) {
@@ -66,22 +63,16 @@ function writeReadMe(data) {
             console.log('README created!');
         }
     })
-
 };
 
-// TODO: Create a function to initialize app
-
-// What needs to be initialized? Am I just calling functions here?  Is this where I link the generateMarkdown.js file?
+// This function provides the instructions to ask the questions, generate the markdown file, and write that file to the directory.
 function init() {
     inquirer.prompt(questions)
         .then(answers => {
-            //How do I get these answers over to the generateMarkdown.js?
             const markdown = generateMarkdown(answers);
             writeReadMe(markdown);
         })
 }
 
-
-
-// Function call to initialize app
+// Function call to initialize app, starts the process.
 init();
