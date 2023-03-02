@@ -1,7 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 
-// Create object, pull items from object for functions?
+// Objects for license information
 
 const gnuInfo =
 {
@@ -24,17 +22,9 @@ const boostInfo =
   link: `[Boost Software License 1.0](https://opensource.org/license/bsl1-0-html/)`,
 };
 
-
-// How do I get the data for the license chosen from index.js?  This throws an error for can't find index.js.
-
+// This function returns the correct badge information for the license selected by the user.
 
 function renderLicenseBadge(license) {
-
-  /*  const badgeInfo = {
-     GNUGPLv3: `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`,
-     MIT: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`,
-     Boost: `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`,
-   } */
   if (license === mitInfo.type) {
     return mitInfo.badge;
   } else if (license === gnuInfo.type) {
@@ -46,8 +36,7 @@ function renderLicenseBadge(license) {
   };
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// This function returns the link to the text of the license selected by the user.
 function renderLicenseLink(license) {
   if (license === mitInfo.type) {
     return mitInfo.link;
@@ -60,9 +49,7 @@ function renderLicenseLink(license) {
   };
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-
+// This function builds the license section of the README
 function renderLicenseSection(license) {
   if (license) {
     return `${renderLicenseBadge(license)}\n 
@@ -103,5 +90,5 @@ function generateMarkdown({ title, license, description, installation, usage, cr
   [email](${email})
 `;
 }
-
+// This statement makes the generateMarkdown function available for use in the index.js file.
 module.exports = generateMarkdown;
