@@ -89,7 +89,7 @@ function generateMarkdown({ title, license, description, installation, usage, cr
   ## Installation\n
   ${installation}\n
   ## Usage\n
-  ${usage}\n
+  ${usage}\n 
   ## Credits\n
   ${credits}\n
   ## License\n
