@@ -67,7 +67,7 @@ function renderLicenseSection(license) {
   if (license) {
     return `${renderLicenseBadge(license)}\n
     ${renderLicenseLink(license)}\n
-    For the complete text of the license, please click on the link provided.`;
+    For the complete text of the license, please click on the link provided.\n`;
   } else {
     return ("");
   };
@@ -82,25 +82,25 @@ function generateMarkdown({ title, license, description, installation, usage, cr
   ## Table of Contents\n
   -[Installation](#Installation)\n
   -[Usage](#Usage)\n
-  -[Credits and Collaborators](#Credits and Collaborators)\n
+  -[Credits](#Credits)\n
   -[License](#License)\n
   -[Tests](#Tests)\n
   -[Questions](#Questions)\n
   ## Installation\n
   ${installation}\n
   ## Usage\n
-  ${usage}\n
-  ## Credits and Collaborators\n
+  ${usage}\n 
+  ## Credits\n
   ${credits}\n
   ## License\n
   ${renderLicenseSection(license)}
   ## Tests\n
-  ${tests}
+  ${tests}\n
   ## Questions\n
   If you have questions, please reach out to me at:\n
   [Github Link](${github})\n
   or\n
-  ${email}
+  [Email Link](${email})
 `;
 }
 

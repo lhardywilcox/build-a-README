@@ -1,10 +1,10 @@
-# oief
+# eight
 
-  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  lsdjfoiasef
+  six
 
   ## Table of Contents
 
@@ -12,7 +12,7 @@
 
   -[Usage](#Usage)
 
-  -[Credits and Collaborators](#Credits and Collaborators)
+  -[Credits](#Credits)
 
   -[License](#License)
 
@@ -22,32 +22,34 @@
 
   ## Installation
 
-  osijf
+  seven
 
   ## Usage
 
-  owiejf
+  five
 
-  ## Credits/Collaborators
+  ## Credits
 
-  aosdifj
+  three
 
   ## License
 
-  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-    [Boost Software License 1.0 link](https://opensource.org/license/bsl1-0-html/)
+    [MIT License Link](https://opensource.org/license/mit-0/)
 
     For the complete text of the license, please click on the link provided.
+
   ## Tests
 
-  owiejf
+  zero
+
   ## Questions
 
   If you have questions, please reach out to me at:
 
-  [Github Link](owiejf)
+  [Github Link](nine)
 
   or
 
-  owiejf
+  [Email Link](unknown)
